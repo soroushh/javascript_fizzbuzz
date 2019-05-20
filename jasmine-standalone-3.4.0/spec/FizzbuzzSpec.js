@@ -13,4 +13,8 @@ describe("Fizzbuz",function(){
   it("if the number is devisible by 15, the output is fizzbuzz",function(){
     expect(game.fizzBuzz(15)).toEqual("fizzbuzz")
   })
+
+  it("if the number is not devisible by 3 or 5, it will comes out",function(){
+    expect(game.fizzBuzz(17)).toEqual(17)
+  })
 })
